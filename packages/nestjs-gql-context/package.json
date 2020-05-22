@@ -1,6 +1,6 @@
 {
   "name": "@2muchcoffee/nestjs-gql-context",
-  "version": "0.0.5-0",
+  "version": "0.0.1-0",
   "description": "NestJS npm package",
   "repository": {
     "type": "git",
@@ -13,12 +13,12 @@
     "access": "public"
   },
   "devDependencies": {
-    "@2muchcoffee/nestjs-gql-context": "^0.0.5-0",
+    "@2muchcoffee/nestjs-gql-context": "^0.0.1-0",
     "@nestjs/common": "^6.0.0",
     "@nestjs/core": "^6.0.0",
     "@nestjs/graphql": "^6.0.0"
   },
   "peerDependencies": {
-    "@2muchcoffee/nestjs-gql-context": "0.0.4-beta.12"
+    "@2muchcoffee/nestjs-gql-context": "0.0.0"
   }
 }
