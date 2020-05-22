@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common';
 import { APP_INTERCEPTOR } from '@nestjs/core';
-import { NestjsContextInterceptor } from './nestjs-context.interceptor';
+import { ContextInterceptor } from './context.interceptor';
 
 @Module({
   providers: [
     {
       provide: APP_INTERCEPTOR,
-      useClass: NestjsContextInterceptor,
+      useClass: ContextInterceptor,
     },
   ],
 })
-export class NestjsContextModule {
+export class ContextModule {
 }

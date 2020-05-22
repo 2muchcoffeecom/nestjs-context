@@ -1,2 +1,2 @@
-export * from './nestjs-context.module';
-export * from './nestjs-context';
+export * from './context.module';
+export * from './context';

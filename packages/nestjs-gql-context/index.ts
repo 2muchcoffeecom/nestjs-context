@@ -1,1 +1,1 @@
-export * from './nestjs-gql-context';
+export * from './context';

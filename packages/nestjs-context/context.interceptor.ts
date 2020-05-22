@@ -3,7 +3,7 @@ import { CallHandler, ExecutionContext, Injectable, NestInterceptor } from '@nes
 import { Observable } from 'rxjs';
 
 @Injectable()
-export class NestjsContextInterceptor implements NestInterceptor {
+export class ContextInterceptor implements NestInterceptor {
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> | Promise<Observable<any>> {
     const session = cls.getNamespace('contextStore') || cls.createNamespace('contextStore');
 
