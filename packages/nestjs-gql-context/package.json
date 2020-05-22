@@ -1,6 +1,6 @@
 {
   "name": "@2muchcoffee/nestjs-gql-context",
-  "version": "7.0.16",
+  "version": "0.0.5-0",
   "description": "NestJS npm package",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@2muchcoffee/nestjs-gql-context": "^7.0.16",
+    "@2muchcoffee/nestjs-gql-context": "^0.0.5-0",
     "@nestjs/common": "^6.0.0",
     "@nestjs/core": "^6.0.0",
     "@nestjs/graphql": "^6.0.0"

@@ -1,6 +1,6 @@
 {
   "name": "@2muchcoffee/nestjs-context",
-  "version": "7.0.16",
+  "version": "0.0.5-0",
   "description": "NestJS npm package",
   "repository": {
     "type": "git",
