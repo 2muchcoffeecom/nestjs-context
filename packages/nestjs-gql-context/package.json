@@ -1,0 +1,24 @@
+{
+  "name": "@2muchcoffee/nestjs-gql-context",
+  "version": "7.0.15",
+  "description": "NestJS npm package",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2muchcoffeecom/nestjs-context"
+  },
+  "bugs": "https://github.com/2muchcoffeecom/nestjs-context",
+  "license": "MIT",
+  "author": "Logvin Oleg <logvinoleg89@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@2muchcoffee/nestjs-gql-context": "^7.0.15",
+    "@nestjs/common": "^6.0.0",
+    "@nestjs/core": "^6.0.0",
+    "@nestjs/graphql": "^6.0.0"
+  },
+  "peerDependencies": {
+    "@2muchcoffee/nestjs-gql-context": "0.0.4-beta.12"
+  }
+}
