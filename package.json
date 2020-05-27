@@ -1,0 +1,73 @@
+{
+  "name": "@2muchcoffee/nestjs-context",
+  "version": "0.0.0",
+  "description": "Allows you to get the request context outside of the NestJs request scope",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2muchcoffeecom/nestjs-context"
+  },
+  "bugs": "https://github.com/2muchcoffeecom/nestjs-context",
+  "license": "MIT",
+  "author": "Logvin Oleg <logvinoleg89@gmail.com>",
+  "scripts": {
+    "build": "gulp build --dist node_modules/@2muchcoffee",
+    "postbuild": "gulp move",
+    "prebuild:prod": "npm run clean",
+    "build:prod": "gulp build",
+    "build:samples": "gulp install:samples && npm run build && gulp build:samples",
+    "clean": "gulp clean:bundle",
+    "format": "prettier \"**/*.ts\" --ignore-path ./.prettierignore --write && git status",
+    "lint": "concurrently 'npm run lint:packages' 'npm run lint:spec'",
+    "lint:packages": "eslint 'packages/**/**.ts' --fix --ignore-pattern 'packages/**/*.spec.ts'",
+    "lint:spec": "eslint 'packages/**/**.spec.ts' -c '.eslintrc.spec.js' --fix",
+    "prerelease": "gulp copy-misc && gulp build --dist node_modules/@2muchcoffee",
+    "publish": "npm run prerelease && npm run build:prod && ./node_modules/.bin/lerna publish --force-publish --access public --exact -m \"chore(@2muchcoffee) publish %s release\"",
+    "publish:beta": "npm run prerelease && npm run build:prod && ./node_modules/.bin/lerna publish --npm-tag=beta --access public -m \"chore(@2muchcoffee) publish %s release\"",
+    "publish:next": "npm run prerelease && npm run build:prod && ./node_modules/.bin/lerna publish --npm-tag=next --access public --skip-git -m \"chore(@2muchcoffee) publish %s release\"",
+    "publish:rc": "npm run prerelease && npm run build:prod && ./node_modules/.bin/lerna publish --npm-tag=rc --access public -m \"chore(@2muchcoffee) publish %s release\"",
+    "publish:test": "npm run prerelease && npm run build:prod && ./node_modules/.bin/lerna publish --force-publish --access public --npm-tag=test --skip-git -m \"chore(@2muchcoffee) publish %s release\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -c .commitlintrc.json -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "packages/**/*.{ts,json}": [
+      "prettier --ignore-path ./.prettierignore --write"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@codechecks/client": "0.1.10",
+    "@types/node": "10.17.3",
+    "@typescript-eslint/eslint-plugin": "2.32.0",
+    "@typescript-eslint/parser": "2.32.0",
+    "cli-color": "^2.0.0",
+    "concurrently": "5.2.0",
+    "delete-empty": "3.0.0",
+    "eslint": "7.0.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.20.2",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "lerna": "2.11.0",
+    "lint-staged": "10.2.2",
+    "ts-node": "8.10.1",
+    "typescript": "3.7.2",
+    "@nestjs/common": "^6.0.0",
+    "@nestjs/core": "^6.0.0",
+    "@nestjs/graphql": "^6.0.0",
+    "cls-hooked": "^4.2.2",
+    "rxjs": "^6.3.3",
+    "tsc-watch": "2.2.1",
+    "tsconfig-paths": "3.8.0",
+    "tslint": "^6.0.0"
+  },
+  "engines": {
+    "node": ">= 10.13.0"
+  }
+}

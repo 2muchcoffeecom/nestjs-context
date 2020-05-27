@@ -1,0 +1,18 @@
+{
+  "name": "@2muchcoffee/nestjs-gql-context",
+  "version": "0.1.0",
+  "description": "NestJS npm package",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2muchcoffeecom/nestjs-context"
+  },
+  "bugs": "https://github.com/2muchcoffeecom/nestjs-context",
+  "license": "MIT",
+  "author": "Logvin Oleg <logvinoleg89@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@2muchcoffee/nestjs-context": "^0.0.0"
+  }
+}

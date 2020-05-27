@@ -1,0 +1,72 @@
+export const cats = [
+  {
+    id: 1,
+    name: 'Oscar',
+    age: 1,
+    breed: 'Abyssinian',
+    ownerId: 1,
+  },
+  {
+    id: 2,
+    name: 'Sam',
+    age: 2,
+    breed: 'Aegean',
+    ownerId: 2,
+  },
+  {
+    id: 3,
+    name: 'Coco',
+    age: 3,
+    breed: 'American Bobtail',
+    ownerId: 2,
+  },
+  {
+    id: 4,
+    name: 'Missy',
+    age: 4,
+    breed: 'American Curl',
+    ownerId: 2,
+  },
+  {
+    id: 5,
+    name: 'Smokey',
+    age: 5,
+    breed: 'American Ringtail',
+    ownerId: 2,
+  },
+  {
+    id: 6,
+    name: 'Sooty',
+    age: 6,
+    breed: 'Birman',
+    ownerId: 2,
+  },
+  {
+    id: 7,
+    name: 'Kitty',
+    age: 7,
+    breed: 'Bombay',
+    ownerId: 2,
+  },
+  {
+    id: 8,
+    name: 'Jack',
+    age: 8,
+    breed: 'Brazilian Shorthair',
+    ownerId: 2,
+  },
+  {
+    id: 9,
+    name: 'Charlie',
+    age: 9,
+    breed: 'Cornish Rex',
+    ownerId: 2,
+  },
+  {
+    id: 10,
+    name: 'Ginger',
+    age: 10,
+    breed: 'Devon Rex',
+    ownerId: 2,
+  }
+];

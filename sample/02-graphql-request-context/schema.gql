@@ -1,0 +1,27 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""Cat"""
+type Cat {
+  id: Float!
+  name: String!
+  age: Float!
+  breed: String!
+  ownerId: Float!
+}
+
+type Query {
+  find: [Cat!]!
+}
+
+type Mutation {
+  update(input: UpdateCatDto!): Cat!
+}
+
+input UpdateCatDto {
+  id: Float!
+  name: String
+  age: Float
+  breed: String
+}

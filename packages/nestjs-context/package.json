@@ -1,0 +1,21 @@
+{
+  "name": "@2muchcoffee/nestjs-context",
+  "version": "0.1.0",
+  "description": "NestJS npm package",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2muchcoffeecom/nestjs-context"
+  },
+  "bugs": "https://github.com/2muchcoffeecom/nestjs-context",
+  "license": "MIT",
+  "author": "Logvin Oleg <logvinoleg89@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "cls-hooked": "^4.2.2"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">=6.0.0"
+  }
+}
