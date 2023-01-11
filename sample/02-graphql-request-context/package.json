@@ -24,7 +24,7 @@
     "@nestjs/swagger": "^4.5.8",
     "apollo-server-express": "^2.13.1",
     "class-transformer": "0.2.3",
-    "class-validator": "0.12.2",
+    "class-validator": "0.14.0",
     "graphql": "^15.0.0",
     "graphql-tools": "^6.0.1",
     "reflect-metadata": "0.1.13",
